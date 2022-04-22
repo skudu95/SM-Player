@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/navHeaderTextColor"
+    app:cardCornerRadius="10dp"
+    app:strokeColor="@color/navHeaderTextColor"
+    app:strokeWidth="2dp">
+    <!--    android:backgroundTint="@color/navGradEndColor"-->
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgSongPV"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:backgroundTint="@color/navGradEndColor"
+        android:contentDescription="@string/imgSong"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_logo"
+        app:shapeAppearanceOverlay="@style/curved" />
+    <!--    remove bgtint from image if needed-->
+
+    <TextView
+        android:id="@+id/tvSongNamePV"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/playListName"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="@string/playListName"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/btnDelPV"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/transparent"
+        android:contentDescription="@string/playListDelete"
+        android:gravity="center"
+        android:src="@drawable/delete_icon"
+        app:tint="@color/white" />
+    <!--    TODO: change the padding since now working on phone-->
+
+</com.google.android.material.card.MaterialCardView>

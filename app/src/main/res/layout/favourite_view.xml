@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgSongFV"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_nav_menu"
+        android:contentDescription="@string/songName"
+        android:src="@drawable/icon_logo"
+        android:layout_gravity="center"
+        app:shapeAppearanceOverlay="@style/curved" />
+
+    <TextView
+        android:id="@+id/tvSongNameFV"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="1"
+        android:text="@string/songName"
+        android:textColor="@color/white" />
+
+</LinearLayout>

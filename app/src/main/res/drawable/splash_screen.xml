@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    android:opacity="opaque"-->
+
+    <!--    <item android:drawable="@color/white" />-->
+        <item android:drawable="@drawable/bg_gradient" />
+<!--    <item android:drawable="@color/bgColor1" />-->
+    <!--    <item
+            android:drawable="@drawable/splash_screen_icon"
+            android:gravity="center" />-->
+
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/splash_screen_text_icon" />
+    </item>
+
+  <!--  <item android:bottom="50dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/favourite_icon" />
+    </item>-->
+
+</layer-list>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    tools:context=".activities.FeedbackActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/topicFA"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/navHeaderTextColor"
+        android:gravity="center|start"
+        android:hint="@string/feedbackTopic"
+        android:inputType="textEmailSubject"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailFA"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/navHeaderTextColor"
+        android:gravity="center|start"
+        android:hint="@string/feedbackEmail"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/messageFA"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/navHeaderTextColor"
+        android:gravity="center|start"
+        android:hint="Message"
+        android:inputType="textLongMessage"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnSendFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:text="@string/btnSend"
+        android:textColor="@color/navHeaderTextColor" />
+
+</LinearLayout>
