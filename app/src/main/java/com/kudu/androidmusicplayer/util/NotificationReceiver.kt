@@ -55,7 +55,7 @@ class NotificationReceiver : BroadcastReceiver() {
         //for image
         Glide.with(context)
             .load(PlayerActivity.musicListPA[PlayerActivity.songPosition].artUri)
-            .apply(RequestOptions().placeholder(R.drawable.icon_logo).centerCrop())
+            .apply(RequestOptions().placeholder(R.drawable.sm_logo_new).centerCrop())
             .into(PlayerActivity.binding.imgSongPA)
         //text
         PlayerActivity.binding.tvSongNamePA.text =
@@ -63,7 +63,7 @@ class NotificationReceiver : BroadcastReceiver() {
         //for Now Playing
         Glide.with(context)
             .load(PlayerActivity.musicListPA[PlayerActivity.songPosition].artUri)
-            .apply(RequestOptions().placeholder(R.drawable.icon_logo).centerCrop())
+            .apply(RequestOptions().placeholder(R.drawable.sm_logo_new).centerCrop())
             .into(NowPlaying.binding.imgSongNP)
         //title text
         NowPlaying.binding.tvSongNameNP.text = PlayerActivity.musicListPA[PlayerActivity.songPosition].title
