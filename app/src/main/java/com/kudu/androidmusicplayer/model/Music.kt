@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.kudu.androidmusicplayer.model
 
 import android.media.MediaMetadataRetriever

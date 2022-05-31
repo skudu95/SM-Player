@@ -1,5 +1,6 @@
 package com.kudu.androidmusicplayer.activities
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Toast
@@ -14,7 +15,6 @@ import com.kudu.androidmusicplayer.model.MusicPlaylist
 import com.kudu.androidmusicplayer.model.Playlist
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.ArrayList
 
 class PlayListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPlayListBinding
@@ -87,6 +87,7 @@ class PlayListActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onResume() {
         super.onResume()
         playlistAdapter.notifyDataSetChanged()

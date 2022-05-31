@@ -38,7 +38,7 @@ class NowPlaying : Fragment() {
             PlayerActivity.musicService!!.createMediaPlayer()
             Glide.with(this)
                 .load(PlayerActivity.musicListPA[PlayerActivity.songPosition].artUri)
-                .apply(RequestOptions().placeholder(R.drawable.icon_logo).centerCrop())
+                .apply(RequestOptions().placeholder(R.drawable.sm_logo_new).centerCrop())
                 .into(binding.imgSongNP)
             //title text
             binding.tvSongNameNP.text =
@@ -64,7 +64,7 @@ class NowPlaying : Fragment() {
             //for image
             Glide.with(this)
                 .load(PlayerActivity.musicListPA[PlayerActivity.songPosition].artUri)
-                .apply(RequestOptions().placeholder(R.drawable.icon_logo).centerCrop())
+                .apply(RequestOptions().placeholder(R.drawable.sm_logo_new).centerCrop())
                 .into(binding.imgSongNP)
             //title text
             binding.tvSongNameNP.text =

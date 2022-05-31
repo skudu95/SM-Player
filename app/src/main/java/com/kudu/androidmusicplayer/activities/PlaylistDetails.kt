@@ -18,7 +18,7 @@ import com.kudu.androidmusicplayer.model.checkPlaylist
 class PlaylistDetails : AppCompatActivity() {
 
     lateinit var binding: ActivityPlaylistDetailsBinding
-    lateinit var adapter: MusicAdapter
+    private lateinit var adapter: MusicAdapter
 
     companion object{
         var currentPlaylistPos: Int = -1
@@ -73,7 +73,7 @@ class PlaylistDetails : AppCompatActivity() {
         }
     }
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "NotifyDataSetChanged")
     override fun onResume() {
         super.onResume()
         binding.tvPlaylistNamePD.text = PlayListActivity.musicPlaylist.ref[currentPlaylistPos].name
@@ -84,7 +84,7 @@ class PlaylistDetails : AppCompatActivity() {
             //for image
             Glide.with(this)
                 .load(PlayListActivity.musicPlaylist.ref[currentPlaylistPos].playlist[0].artUri)
-                .apply(RequestOptions().placeholder(R.drawable.icon_logo).centerCrop())
+                .apply(RequestOptions().placeholder(R.drawable.sm_logo_new).centerCrop())
                 .into(binding.imgPlaylistPD)
             binding.btnShufflePD.visibility = View.VISIBLE
         }

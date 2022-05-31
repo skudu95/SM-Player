@@ -35,7 +35,7 @@ class FavouriteAdapter(private var context: Context, private var musicList: Arra
         //for image
         Glide.with(context)
             .load(musicList[position].artUri)
-            .apply(RequestOptions().placeholder(R.drawable.icon_logo).centerCrop())
+            .apply(RequestOptions().placeholder(R.drawable.sm_logo_new).centerCrop())
             .into(holder.image)
 
         holder.root.setOnClickListener{

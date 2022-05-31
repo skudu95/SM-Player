@@ -32,7 +32,7 @@ class FeedbackActivity : AppCompatActivity() {
 //            val emailUser = binding.emailFA.text.toString()
 //            val userName = "kudu.kudu.tolu@gmail.com"
             val userName = binding.emailFA.text.toString()
-//            val pass = "Sweetloveaniandsk"
+//            val pass = ""
             val pass = ""
             val myEmail = "kudu.kudu.tolu@gmail.com"
             val cm = this.getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager

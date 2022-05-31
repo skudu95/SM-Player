@@ -1,5 +1,6 @@
 package com.kudu.androidmusicplayer.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -68,7 +69,7 @@ class PlaylistViewAdapter(
             //for image
             Glide.with(context)
                 .load(PlayListActivity.musicPlaylist.ref[position].playlist[0].artUri)
-                .apply(RequestOptions().placeholder(R.drawable.icon_logo).centerCrop())
+                .apply(RequestOptions().placeholder(R.drawable.sm_logo_new).centerCrop())
                 .into(holder.image)
         }
     }
@@ -77,6 +78,7 @@ class PlaylistViewAdapter(
         return playlistList.size
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun refreshPlaylist() {
         playlistList = ArrayList()
         playlistList.addAll(PlayListActivity.musicPlaylist.ref)

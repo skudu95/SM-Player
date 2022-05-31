@@ -24,7 +24,10 @@ import com.kudu.androidmusicplayer.databinding.ActivityPlayerBinding
 import com.kudu.androidmusicplayer.model.*
 import com.kudu.androidmusicplayer.util.MusicService
 
+@Suppress("DEPRECATION")
 class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCompletionListener {
+
+
 
     companion object {
         lateinit var musicListPA: ArrayList<Music>
@@ -252,7 +255,7 @@ class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCom
         //for image
         Glide.with(this)
             .load(musicListPA[songPosition].artUri)
-            .apply(RequestOptions().placeholder(R.drawable.icon_logo).centerCrop())
+            .apply(RequestOptions().placeholder(R.drawable.sm_logo_new).centerCrop())
             .into(binding.imgSongPA)
         //text
         binding.tvSongNamePA.text = musicListPA[songPosition].title
@@ -366,6 +369,7 @@ class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCom
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 20 || resultCode == RESULT_OK)
