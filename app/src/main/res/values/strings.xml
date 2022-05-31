@@ -29,7 +29,6 @@
     <string name="playListName">Playlist Name</string>
     <string name="playListDelete">Play List Delete</string>
     <string name="userName">Your name</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="addSong">Add Song</string>
     <string name="removeSong">Remove All</string>
@@ -39,5 +38,10 @@
     <string name="setTheme">Set Theme</string>
     <string name="sortBy">Sort By</string>
     <string name="versionName">Version Name</string>
+    <string name="about">About</string>
+    <string name="message">Message</string>
+    <string name="feedback">Feedback</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit</string>
 
 </resources>

@@ -12,7 +12,7 @@
         android:layout_height="70dp"
         android:background="@drawable/bg_nav_menu"
         android:contentDescription="@string/songName"
-        android:src="@drawable/icon_logo"
+        android:src="@drawable/sm_logo_new"
         android:layout_gravity="center"
         app:shapeAppearanceOverlay="@style/curved" />
 

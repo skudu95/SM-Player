@@ -18,7 +18,7 @@
         android:backgroundTint="@color/navGradEndColor"
         android:contentDescription="@string/imgSong"
         android:scaleType="centerCrop"
-        android:src="@drawable/icon_logo"
+        android:src="@drawable/sm_logo_new"
         app:shapeAppearanceOverlay="@style/curved" />
     <!--    remove bgtint from image if needed-->
 

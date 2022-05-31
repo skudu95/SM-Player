@@ -69,7 +69,7 @@
             android:layout_width="250dp"
             android:layout_height="match_parent"
             android:padding="5dp"
-            android:src="@drawable/icon_logo" />
+            android:src="@drawable/sm_logo_new" />
         <!--        android:background="@drawable/bg_nav_menu"-->
 
         <TextView

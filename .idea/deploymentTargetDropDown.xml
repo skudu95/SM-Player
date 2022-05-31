@@ -7,51 +7,32 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/Pixel_4_XL_Android11.avd" />
+            <value value="$USER_HOME$/.android/avd/Android_11.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-01-29T05:51:37.686839Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-05-31T18:29:09.316092Z" />
+    <multipleDevicesSelectedInDropDown value="true" />
     <runningDeviceTargetsSelectedWithDialog>
       <Target>
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
+            <type value="SERIAL_NUMBER" />
+            <value value="FIJF4H6LG6KZEI6D" />
+          </Key>
+        </deviceKey>
+      </Target>
+      <Target>
+        <type value="RUNNING_DEVICE_TARGET" />
+        <deviceKey>
+          <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/Pixel_4_XL_Android11.avd" />
+            <value value="$USER_HOME$/.android/avd/Android_11.avd" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetsSelectedWithDialog>
-    <targetsSelectedWithDialog>
-      <Target>
-        <type value="QUICK_BOOT_TARGET" />
-        <deviceKey>
-          <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/Pixel_4_XL_API_26.avd" />
-          </Key>
-        </deviceKey>
-      </Target>
-      <Target>
-        <type value="QUICK_BOOT_TARGET" />
-        <deviceKey>
-          <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/Pixel_4_XL_Android11.avd" />
-          </Key>
-        </deviceKey>
-      </Target>
-      <Target>
-        <type value="QUICK_BOOT_TARGET" />
-        <deviceKey>
-          <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/Pixel_2_API_28.avd" />
-          </Key>
-        </deviceKey>
-      </Target>
-    </targetsSelectedWithDialog>
   </component>
 </project>

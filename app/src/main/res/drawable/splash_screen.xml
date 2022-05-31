@@ -3,22 +3,28 @@
     <!--    android:opacity="opaque"-->
 
     <!--    <item android:drawable="@color/white" />-->
-        <item android:drawable="@drawable/bg_gradient" />
-<!--    <item android:drawable="@color/bgColor1" />-->
+    <item android:drawable="@drawable/bg_gradient" />
+    <!--    <item android:drawable="@color/bgColor1" />-->
     <!--    <item
             android:drawable="@drawable/splash_screen_icon"
             android:gravity="center" />-->
 
+    <!-- <item>
+         <bitmap
+             android:gravity="center"
+             android:src="@drawable/splash_screen_text_icon" />
+     </item>-->
+
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/splash_screen_text_icon" />
+            android:src="@drawable/sm_logo_text_new" />
     </item>
 
-  <!--  <item android:bottom="50dp">
-        <bitmap
-            android:gravity="center"
-            android:src="@drawable/favourite_icon" />
-    </item>-->
+    <!--  <item android:bottom="50dp">
+          <bitmap
+              android:gravity="center"
+              android:src="@drawable/favourite_icon" />
+      </item>-->
 
 </layer-list>

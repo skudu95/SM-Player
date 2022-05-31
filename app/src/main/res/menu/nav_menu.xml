@@ -4,21 +4,21 @@
     <item
         android:id="@+id/navFeedback"
         android:icon="@drawable/feedback_icon"
-        android:title="Feedback" />
+        android:title="@string/feedback" />
 
     <item
         android:id="@+id/navSettings"
         android:icon="@drawable/settings_icon"
-        android:title="Settings" />
+        android:title="@string/settings" />
 
     <item
         android:id="@+id/navAbout"
         android:icon="@drawable/about_icon"
-        android:title="About" />
+        android:title="@string/about" />
 
     <item
         android:id="@+id/navExit"
         android:icon="@drawable/exit_icon"
-        android:title="Exit" />
+        android:title="@string/exit" />
 
 </menu>

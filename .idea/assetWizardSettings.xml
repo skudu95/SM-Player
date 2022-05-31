@@ -79,8 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$PROJECT_DIR$/app/src/music player icon.png" />
-                                                <entry key="scalingPercent" value="73" />
+                                                <entry key="imagePath" value="$PROJECT_DIR$/../../../sweets_icons/SM logo.png" />
+                                                <entry key="scalingPercent" value="98" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -114,7 +114,6 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="080c47" />
                                       <entry key="outputName" value="music_player_icon" />
                                     </map>
                                   </option>

@@ -36,7 +36,7 @@
         android:layout_height="250dp"
         android:background="@color/navHeaderTextColor"
         android:gravity="center|start"
-        android:hint="Message"
+        android:hint="@string/message"
         android:inputType="textLongMessage"
         android:paddingHorizontal="16dp"
         android:textColor="@color/white" />
