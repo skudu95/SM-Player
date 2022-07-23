@@ -27,8 +27,6 @@ import com.kudu.androidmusicplayer.util.MusicService
 @Suppress("DEPRECATION")
 class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCompletionListener {
 
-
-
     companion object {
         lateinit var musicListPA: ArrayList<Music>
         var songPosition: Int = 0
@@ -161,6 +159,7 @@ class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCom
         }
         //fav button
         binding.btnAddFavouritePA.setOnClickListener {
+            fIndex = favouriteChecker(musicListPA[songPosition].id)
             if (isFavourite) {
                 isFavourite = false
                 binding.btnAddFavouritePA.setImageResource(R.drawable.favourite_empty_icon)
@@ -239,7 +238,7 @@ class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCom
                 musicListPA.addAll(PlayListActivity.musicPlaylist.ref[PlaylistDetails.currentPlaylistPos].playlist)
                 setLayout()
             }
-            "PlaylistDetailsShuffle" ->{
+            "PlaylistDetailsShuffle" -> {
                 startService()
                 musicListPA = ArrayList()
                 musicListPA.addAll(PlayListActivity.musicPlaylist.ref[PlaylistDetails.currentPlaylistPos].playlist)
@@ -259,7 +258,7 @@ class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCom
             .into(binding.imgSongPA)
         //text
         binding.tvSongNamePA.text = musicListPA[songPosition].title
-       // binding.tvSongNamePA.text.isSelected = true //not working
+        // binding.tvSongNamePA.text.isSelected = true //not working
         //repeat
         if (repeat) {
             binding.btnRepeatPA.setColorFilter(ContextCompat.getColor(this, R.color.purple_500))
@@ -351,7 +350,9 @@ class PlayerActivity : AppCompatActivity(), ServiceConnection, MediaPlayer.OnCom
         musicService!!.seekBarSetup()
         //handing call
         musicService!!.audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
-        musicService!!.audioManager.requestAudioFocus(musicService, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN)
+        musicService!!.audioManager.requestAudioFocus(musicService,
+            AudioManager.STREAM_MUSIC,
+            AudioManager.AUDIOFOCUS_GAIN)
     }
 
     override fun onServiceDisconnected(name: ComponentName?) {
